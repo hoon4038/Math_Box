@@ -47,6 +47,9 @@ git pull : 리모트 레포지터리 내용을 로컬 레포지터리에 반영
 
 git log : 커밋 history를 볼수 있다
 git show (커밋 ID 처음 4~5자리) : 해당 커밋의 변경사항을 볼 수 있다.
+<aliasing> : 별명 붙이기 (ex) git log --pretty=oneline을 git history라는 별명으로 사용해보자)
+git config alias.history "log --pretty=oneline"
+
 git commit --amend :최신 커밋을 수정해서 다시 새로운 커밋으로 만들기
 git reset : 과거 커밋으로 아예 돌아가고 싶을때 사용
 --soft (커밋 앞 4글자): repository만 과거의 특정 커밋의 내용과 같게 만듬
